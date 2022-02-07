@@ -1,0 +1,62 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "globals": {
+    "fetch": true
+  },
+  "rules": {
+    "dependency-group": "off",
+    "gutenberg-phase": "off",
+    "i18n-ellipsis": "off",
+    "i18n-no-collapsible-whitespace": "off",
+    "i18n-no-placeholders-only": "off",
+    "i18n-no-variables": "off",
+    "i18n-text-domain": "off",
+    "i18n-translator-comments": "off",
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "no-nested-ternary": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/no-onchange": "off",
+    "react/jsx-filename-extension": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
+    "react/prop-types": "off",
+    "react/function-component-definition": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": [
+          "src"
+        ]
+      }
+    }
+  }
+}
